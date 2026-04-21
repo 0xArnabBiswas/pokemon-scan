@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokémon Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧠 Pokémon Scanner</h1>
+
+    <!-- Webcam Page -->
+    <div id="webcam-page">
+      <h2>Webcam</h2>
+      <div id="webcam-container"></div>
+      <button id="startWebcam">Start Webcam</button>
+      <button id="stopWebcam" disabled>Stop Webcam</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-status">⚠️ This Website is Still Under Development</p>
+      
+      <p class="footer-info">It can predict among 4 Pokémon:</p>
+      <div class="pokemon-list">
+        <span>🔹 Pikachu</span>
+        <span>🔹 Bulbasaur</span>
+        <span>🔹 Charizard</span>
+        <span>🔹 Squirtle</span>
+      </div>
+
+      <p class="footer-link">
+        To know more about this project: 
+        <a href="https://github.com/0xArnabBiswas/pokemon-scan" target="_blank">GitHub Repository</a>
+      </p>
+
+      <p class="footer-credit">💖 Made with love by <strong>Arnab</strong></p>
+    </div>
+  </footer>
+
+  <!-- TensorFlow + Teachable Machine -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
